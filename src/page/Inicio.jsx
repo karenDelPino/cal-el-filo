@@ -40,19 +40,16 @@ function Inicio() {
       <section className="hero">
         <div className="contenido-hero">
           <h1>CALIDAD CERTIFICADA DESDE SAN JUAN</h1>
-         <h1>Cal de Alta Pureza para Obras Exigentes</h1>
-          <button
-            className="btn btn-primary"
-            onClick={() => (window.location.href = "/contacto")}
-          >
-            Pedir Presupuesto
-          </button>
-           <button
-            className="btn btn-secondary"
-            onClick={() => (window.location.href = "/contacto")}
-          >
-            Pedir Presupuesto
-          </button>
+          <p>Cal de Alta Pureza para Obras Exigentes</p>
+           <div className="hero-buttons">
+            <a href="/Productos" className="btn btn-primary">
+              Ver productos
+            </a>
+            <a href="/contacto" className="btn btn-secondary">
+              Contactanos
+            </a>
+          </div>
+          
         </div>
       </section>
       <section class="hero-alt">
@@ -82,7 +79,7 @@ function Inicio() {
           <div class="hero-image">
             <div class="card-large">
               <img
-                src="src/assets/maquinaria.png"
+                src="src/assets/image/manos-caliza.png"
                 alt="mina de cal"
                 class="hero-img-fluid"
               />
