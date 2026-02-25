@@ -1,0 +1,27 @@
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.contenedor-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.link-menu {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+}
+
+.boton-contacto, .boton-enviar {
+  background-color: var(--rojo-filo) !important;
+  color: white;
+}

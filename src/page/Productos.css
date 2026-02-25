@@ -1,0 +1,54 @@
+/* src/paginas/Productos.css */
+.pagina-productos {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.pagina-productos h2 {
+  font-size: 2.5rem;
+  color: #1A1A1A;
+  margin-bottom: 40px;
+}
+
+.lista-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.producto-detalle {
+  display: flex;
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-left: 8px solid #F39200; /* Naranja de la marca */
+  text-align: left;
+}
+
+.producto-info-ext {
+  padding: 30px;
+  flex: 1;
+}
+
+.producto-info-ext h3 {
+  color: #F39200;
+  margin-bottom: 15px;
+}
+
+.uso-badge {
+  background: #eee;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+/* Para que en el celu se vea una sola columna */
+@media (max-width: 768px) {
+  .producto-detalle {
+    flex-direction: column;
+  }
+}

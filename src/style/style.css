@@ -1,0 +1,16 @@
+/* estilos/colores.css */
+:root {
+  --naranja-principal: #F39200; /* El color de tu logo */
+  --negro-industrial: #1A1A1A;
+  --gris-claro: #E0E0E0;
+  --blanco-puro: #FFFFFF;
+}
+
+/* Un estilo básico para los botones */
+.boton-contacto {
+  background-color: var(--naranja-principal);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

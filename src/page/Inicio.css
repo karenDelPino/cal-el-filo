@@ -1,0 +1,101 @@
+.hero {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/fondo-mineria.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #1A1A1A;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Sección Por Qué Elegirnos */
+.elegirnos {
+  padding: 80px 10%;
+  background-color: #f4f4f4; /* Un gris sutil para separar secciones */
+  text-align: center;
+}
+
+.elegirnos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1A1A1A;
+}
+
+.contenedor-razones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.razon-caja {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.razon-caja h4 {
+  color: #F39200; /* Naranja de tu marca */
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+.razon-caja p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Un detalle para los números o íconos */
+.numero {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(243, 146, 0, 0.2); /* Naranja transparente */
+  margin-bottom: -20px;
+}
+
+/* Estilos del Carrusel */
+.seccion-clientes {
+  padding: 40px 0;
+  background-color: white;
+  overflow: hidden; /* Esconde lo que sobra del carrusel */
+  border-top: 1px solid #eee;
+}
+
+.carrusel-track {
+  display: flex;
+  width: calc(500px * 10); /* Ajusta según cantidad de logos */
+  animation: scroll 20s linear infinite;
+}
+
+.carrusel-track img {
+  height: 70px;
+  margin: 0 40px;
+  filter: grayscale(100%); /* Logos en gris para que se vea serio */
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.carrusel-track img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* La magia de la animación */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 5)); }
+}

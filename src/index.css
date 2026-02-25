@@ -1,0 +1,19 @@
+/* Colores de Cal El Filo */
+:root {
+  --rojo-filo: #D32F2F; /* Cambiamos el naranja por el ROJO del logo */
+  --negro-industrial: #1A1A1A;
+  --blanco: #FFFFFF;
+  --gris-fondo: #F5F5F5;
+}
+
+body {
+  margin: 0;
+  font-family: 'sans-serif'; /* Luego podemos poner la fuente Khula de la plantilla */
+  background-color: var(--blanco);
+  color: var(--gris-oscuro);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,41 @@
+/* src/paginas/Nosotros.css */
+.contenedor-nosotros {
+  padding: 80px 10% 40px 10%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.texto-nosotros {
+  flex: 1; /* Ocupa la mitad del espacio */
+}
+
+.texto-nosotros h2 {
+  color: #F39200; /* Naranja del logo */
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.texto-nosotros p {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.imagen-nosotros {
+  flex: 1; /* Ocupa la otra mitad */
+}
+
+.imagen-nosotros img {
+  box-shadow: 10px 10px 0px var(--rojo-filo);
+}
+
+/* Para que en el celular se vea una cosa debajo de la otra */
+@media (max-width: 768px) {
+  .contenedor-nosotros {
+    flex-direction: column;
+    padding: 40px 5%;
+    text-align: center;
+  }
+}
