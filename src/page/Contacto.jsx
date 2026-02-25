@@ -53,7 +53,7 @@ function Contacto() {
           />
         </div>
 
-        <button type="submit" className="boton-enviar">
+        <button type="submit" className="btn btn-primary">
           Enviar Mensaje
         </button>
       </form>

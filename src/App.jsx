@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Navegador, Routes, Route } from "react-router-dom";
 
 // Importamos las piezas de la web
-import Inicio from "./page/inicio";
+import Inicio from "./page/Inicio";
 import Nosotros from "./page/Nosotros";
 import Productos from "./page/Productos";
 import Contacto from "./page/Contacto";

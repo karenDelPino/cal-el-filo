@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css"; // Importamos el CSS aquí
-import logoImg from "../assets/logoFilo.png"; // Asegúrate de tener un logo en esta ruta
+import logoImg from "../assets/logo.png"; // Asegúrate de tener un logo en esta ruta
 function Menu() {
   return (
     <nav className="navegacion">
@@ -23,7 +23,7 @@ function Menu() {
         <Link to="/productos" className="link-menu">
           Productos
         </Link>
-        <Link to="/contacto" className="boton-contacto">
+        <Link to="/contacto" className="link-menu">
           Contacto
         </Link>
       </div>
