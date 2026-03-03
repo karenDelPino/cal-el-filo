@@ -1,54 +1,170 @@
-/* src/paginas/Productos.css */
+/* --- Contenedor Principal --- */
 .pagina-productos {
-  padding: 60px 10%;
+  padding: 80px 5%;
+  background-color: #fcfcfc; /* Un blanco muy levemente gris para contraste */
   text-align: center;
+  font-family: Arial, sans-serif; /* Ajustar a la fuente de tu marca */
 }
 
 .pagina-productos h2 {
-  font-size: 2.5rem;
-  color: #1A1A1A;
-  margin-bottom: 40px;
+  font-size: 2.8rem;
+  color: #1a1a1a;
+  margin-bottom: 60px;
 }
 
-.lista-productos {
+/* --- La Grilla Responsiva --- */
+.contenedor-tarjetas {
+  display: grid;
+  /* Crea columnas automáticas de mínimo 300px. Se adapta a 1, 2, 3 o 4 columnas según el ancho */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px; /* Espacio entre tarjetas */
+  max-width: 1400px; /* Ancho máximo para pantallas muy grandes */
+  margin: 0 auto;
+}
+
+/* --- Estilo Base de la Tarjeta --- */
+.producto-card {
+  background: white;
+  border-radius: 8px; /* Bordes ligeramente redondeados como en la imagen */
+  padding: 40px; /* Espaciado interno generoso */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Sombra suave */
   display: flex;
   flex-direction: column;
-  gap: 40px;
-}
-
-.producto-detalle {
-  display: flex;
-  background: white;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  border-left: 8px solid #F39200; /* Naranja de la marca */
   text-align: left;
+  transition: transform 0.3s ease;
 }
 
-.producto-info-ext {
-  padding: 30px;
+.producto-card:hover {
+  transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+}
+
+/* --- Sección Superior (Imagen y Título) --- */
+.producto-encabezado {
+  display: flex;
+  align-items: center; /* Alinea verticalmente la imagen y el texto */
+  gap: 5px; /* Espacio entre imagen y texto */
+  margin-bottom: 30px;
+}
+
+/* Contenedor de la imagen circular grande */
+.producto-img-circular-container {
+  width: 120px; /* Ajustar tamaño según necesidad */
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid #ccc; /* Borde fino gris como en la imagen */
+  overflow: hidden; /* Corta la imagen en forma de círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Evita que la imagen se encoja */
+}
+
+.producto-img-circular {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que la imagen llene el círculo sin deformarse */
+}
+
+/* Textos del título */
+.producto-titulos {
   flex: 1;
 }
 
-.producto-info-ext h3 {
-  color: #F39200;
-  margin-bottom: 15px;
+.producto-subtitulo {
+  font-size: 0.85rem;
+  color: #aa2f2f; /* Gris claro */
+  letter-spacing: 1px; /* Espaciado entre letras */
+  display: block;
+  margin-bottom: 5px;
 }
 
-.uso-badge {
-  background: #eee;
-  padding: 5px 12px;
-  border-radius: 5px;
-  font-size: 0.8rem;
+.producto-titulo-principal {
+  font-size: 1.6rem;
+  color: #2c3e50; /* Azul oscuro grisáceo */
   font-weight: bold;
-  margin-bottom: 15px;
-  display: inline-block;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
 }
 
-/* Para que en el celu se vea una sola columna */
-@media (max-width: 768px) {
-  .producto-detalle {
-    flex-direction: column;
+/* Línea verde decorativa */
+.linea-decorativa-verde {
+  width: 100%;
+  height: 3px;
+  background-color: #aa2f2f; /* Verde lima de la imagen */
+}
+
+/* --- Descripción --- */
+.producto-descripcion {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 40px; /* Espacio antes de la sección de presentación */
+  flex-grow: 1; /* Empuja la sección de presentación hacia abajo si hay poco texto */
+}
+
+/* --- Sección de Presentación (Abajo) --- */
+.producto-presentacion-seccion {
+  border-top: 1px solid #eee; /* Línea divisoria sutil */
+  padding-top: 20px;
+  text-align: center; /* Centrar esta sección */
+}
+
+.producto-presentacion-seccion h4 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Contenedor de los 3 iconos */
+.presentacion-iconos-contenedor {
+  display: flex;
+  justify-content: center; /* Centra los items horizontalmente */
+  gap: 20px; /* Espacio entre iconos */
+  flex-wrap: wrap; /* Permite que bajen si no hay espacio */
+}
+
+.presentacion-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px; /* Ancho fijo para cada item */
+}
+
+/* Círculos pequeños para iconos */
+.presentacion-img-circular {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+}
+
+.presentacion-img-circular img {
+  width: 80%; /* El icono no debe llenar todo el círculo */
+  height: 80%;
+  object-fit: contain;
+}
+
+.presentacion-item span {
+  font-size: 0.8rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* --- Ajustes Responsivos Móviles --- */
+@media (max-width: 480px) {
+  .producto-encabezado {
+    flex-direction: column; /* Apila imagen sobre texto en móviles muy pequeños */
+    text-align: center;
+  }
+  
+  .producto-card {
+    padding: 20px; /* Reduce el padding */
   }
 }

@@ -41,7 +41,7 @@ function Inicio() {
         <div className="contenido-hero">
           <h1>CALIDAD CERTIFICADA DESDE SAN JUAN</h1>
           <p>Cal de Alta Pureza para Obras Exigentes</p>
-           <div className="hero-buttons">
+          <div className="hero-buttons">
             <a href="/Productos" className="btn btn-primary">
               Ver productos
             </a>
@@ -49,12 +49,72 @@ function Inicio() {
               Contactanos
             </a>
           </div>
-          
         </div>
       </section>
-      <section class="hero-alt">
-        <div class="hero-container">
-          <div class="hero-text">
+      <section>
+        <h1 className="title">Nuestros Productos</h1>
+        <div>
+          <div className="contenedor-tipos">
+            <img
+              src="src/assets/image/inicio/tiposCal.png"
+              alt="Pureza de Origen"
+              className="icon-tipos"
+            />
+          </div>
+          <div className="contenedor-tipos">
+            <div className="tipos-caja">
+              <a href="/Productos">
+                <img
+                  src="src/assets/image/inicio/cal-aérea.jpg"
+                  alt="Pureza de Origen"
+                  className="icon-tipos-cal"
+                />
+              </a>
+              <h4>CAL AÉREA HIDRATADA</h4>
+            </div>
+
+            <div className="tipos-caja">
+              <a href="/Productos">
+                <img
+                  src="src/assets/image/inicio/calviva.jpg"
+                  alt="Entrega Inmediata"
+                  className="icon-tipos-cal"
+                />
+              </a>
+              <h4>CAL VIVA TRITURADA</h4>
+            </div>
+
+            <div className="tipos-caja">
+              <a href="/Productos">
+                <img
+                  src="src/assets/image/inicio/calviva2o.jpg"
+                  alt="Atención Directa"
+                  className="icon-tipos-cal"
+                />
+              </a>
+              <h4>CAL VIVA MOLIDA</h4>
+            </div>
+            <div className="tipos-caja">
+              <a href="/Productos">
+                <img
+                  src="src/assets/image/inicio/carbonato.jpg"
+                  alt="Atención Directa"
+                  className="icon-tipos-cal"
+                />
+              </a>
+              <h4>CAL VIVA TRITURADA</h4>
+            </div>
+          </div>
+          <div className="hero-buttons">
+            <a href="/Productos" className="btn btn-primary">
+              Ver productos
+            </a>
+          </div>
+        </div>
+      </section>
+      <section className="hero-alt">
+        <div className="hero-container">
+          <div className="hero-text">
             <span>Del Corazón de San Juan a su Obra</span>
             <h1>Líderes en producción de cal</h1>
             <p>
@@ -139,8 +199,8 @@ function Inicio() {
           style={{
             textAlign: "center",
             color: "#999",
-            marginBottom: "30px",
-            fontSize: "1rem",
+            marginBottom: "40px",
+            fontSize: "1.4rem",
           }}
         >
           EMPRESAS QUE CONFÍAN EN NOSOTROS

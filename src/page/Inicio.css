@@ -30,7 +30,14 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+.title{
+  text-align: center;
+  margin: 60px 0 40px;
+  font-size: 2.5rem;
+  color: #1A1A1B;
+  text-transform: uppercase;
 
+}
 /* Sección Por Qué Elegirnos */
 .elegirnos {
   padding: 80px 10%;
@@ -50,6 +57,22 @@
   flex-wrap: wrap;
   gap: 30px;
   
+}
+.contenedor-tipos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+ 
+}
+
+.tipos-caja{
+   flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  color: #D32F2F; /* Naranja de tu marca */
+  font-size: 1.3rem;
+  margin: 80px 0;
 }
 
 .razon-caja {
@@ -78,6 +101,19 @@
   background: rgba(214, 24, 3, 0);
   
 }
+.icon-tipos{
+  width: 550px; 
+  height: 150px;
+  display: flex;
+}
+.icon-tipos-cal{
+  width: 150px; 
+  height: 150px;
+  ;
+  
+  
+  
+}
 /* Un detalle para los números o íconos */
 .numero {
   font-size: 2rem;
@@ -95,14 +131,15 @@
 
 .carrusel-track {
   display: flex;
-  width: 600px; /* Ajusta según cantidad de logos */
+  width: 900px; 
   animation: scroll 30s linear infinite;
+  margin-bottom: 60px;
 }
 
 .carrusel-track img {
-  height: 100px;
+  height: 200px;
   margin: 0 80px;
-  filter: grayscale(100%); /* Logos en gris para que se vea serio */
+  filter: grayscale(100%); /* Logos en gris */
   opacity: 0.6;
   
 }
@@ -112,7 +149,7 @@
   opacity: 1;
 }
 
-/* La magia de la animación */
+/* animación */
 @keyframes scroll {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-250px * 3)); }
@@ -120,15 +157,16 @@
 
 .hero-alt {
   background: linear-gradient(to right, #aa2413 40%, #ffffff86 40%);
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   padding: 10px;
+  margin-top: 50px;
 }
 
 .hero-container {
   display: flex;
-  flex-direction: row-reverse; /* ESTO invierte el orden: Imagen izquierda, texto derecha */
+  flex-direction: row-reverse; /* Imagen izquierda, texto derecha */
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
