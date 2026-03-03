@@ -216,6 +216,7 @@
 
 /* Ajuste para celulares */
 @media (max-width: 768px) {
+  .icon-tipos{width: 100%;height: 100%;}
   .proceso-contenedor { flex-direction: column; gap: 0px; }
   .proceso-contenedor::before { display: none; }
   .hero-alt {

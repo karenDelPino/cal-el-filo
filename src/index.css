@@ -1,3 +1,4 @@
+
 :root {
   /* Color Principal: Rojo Ladrillo */
   --primary-color: #cb4335; 
@@ -52,7 +53,7 @@ h1{
 /* Botón Secundario (Ghost/Borde) */
 .btn-secondary {
   background-color: transparent;
-  color: ;
+  
   border: 1px solid #ffffff;
 }
 

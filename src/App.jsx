@@ -7,6 +7,7 @@ import Nosotros from "./page/Nosotros";
 import Productos from "./page/Productos";
 import Contacto from "./page/Contacto";
 import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/productos" element={<Productos />} />
         <Route path="/contacto" element={<Contacto />} />
       </Routes>
+      <Footer />
     </Navegador>
   );
 }

@@ -1,7 +1,15 @@
-import { React, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./Nosotros.css";
-import historiaImg from "../assets/historia.jpg"; // Asegúrate de tener una imagen en esta ruta
+import historiaImg from "../assets/hisoria-1.jpg";
+import historiaCaldera from "../assets/historia-2.jpg";
+import historiaIso from "../assets/historia-isopng.png";
 import ScrollReveal from "scrollreveal";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+
 function Nosotros() {
   useEffect(() => {
     const sr = ScrollReveal();
@@ -17,32 +25,90 @@ function Nosotros() {
       duration: 1000,
     });
   }, []);
+
   return (
-    <div className="contenedor-nosotros">
-      {/* Columna de Texto */}
-      <div className="texto-nosotros">
-        <h2>Nuestra Historia</h2>
-        <p>
-          En <strong>Cal El Filo</strong>, nos dedicamos con orgullo a la
-          extracción y comercialización de cal de la más alta pureza en la
-          provincia de San Juan.
-        </p>
-        <p>
-          Nuestra empresa nace de la montaña, con el compromiso de proveer un
-          insumo esencial para la industria y la construcción argentina,
-          respetando siempre los estándares de calidad y seguridad minera.
-        </p>
-        <p>
-          Trabajamos día a día para que el fruto de nuestra tierra llegue a cada
-          rincón del país con eficiencia y profesionalismo.
-        </p>
+    <div className="pagina-nosotros">
+      {/* Sección de presentación */}
+      <div className="contenedor-nosotros">
+        <div className="texto-nosotros">
+          <h2>Nuestra Trayectoria</h2>
+          <p>
+            Desde las entrañas de San Juan, Cal El Filo ha crecido junto a la
+            industria argentina, manteniendo la pureza y el compromiso en cada
+            entrega.
+          </p>
+        </div>
       </div>
 
-      {/* Columna de Imagen */}
-      <div className="imagen-nosotros">
-        {/* Aquí puedes poner una foto de la calera o de las montañas de San Juan */}
-        <img src={historiaImg} alt="Extracción de cal en San Juan" />
-      </div>
+      {/* Línea de Tiempo de la Empresa */}
+      <VerticalTimeline lineColor="#D32F2F">
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="1995"
+          iconStyle={{ background: "#D32F2F", color: "#fff" }}
+        >
+          <p>
+            En 1995 se construye el primer horno con una capacidad instalada de
+            50 toneladas por día de cal viva.
+          </p>
+        </VerticalTimelineElement>
+
+        {/* Hito 2: Crecimiento */}
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2010"
+          iconStyle={{ background: "#1A1A1A", color: "#fff" }} // Icono Negro para variar
+        >
+          <img
+            src={historiaImg}
+            alt="Maquinaria industrial"
+            className="imagen-nosotros"
+          />
+
+          <p>
+            Incorporamos tecnología de trituración para ofrecer cal micronizada
+            y cal hidratada de alta pureza.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2022"
+          iconStyle={{ background: "#D32F2F", color: "#fff" }} // Icono Negro para variar
+        >
+          <img
+            src={historiaIso}
+            alt="Maquinaria industrial"
+            className="imagen-nosotros"
+          />
+          <p>
+            Fuimos certificados con las normas internacionales ISO 9001, 14001 y
+            45001 en sistema de gestión de Calidad, Medio Ambiente, Seguridad y
+            Salud Laboral
+          </p>
+        </VerticalTimelineElement>
+        {/* Hito 3: Actualidad */}
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Hoy"
+          iconStyle={{ background: "#D32F2F", color: "#fff" }}
+        >
+          <img
+            src={historiaCaldera}
+            alt="Maquinaria industrial"
+            className="imagen-nosotros"
+          />
+
+          <p>
+            Proveemos cal a las principales obras viales y mineras de todo el
+            país desde nuestro corazón en San Juan.
+          </p>
+        </VerticalTimelineElement>
+
+        {/* Cierre de la línea */}
+        <VerticalTimelineElement
+          iconStyle={{ background: "#1A1A1A", color: "#fff" }}
+        />
+      </VerticalTimeline>
     </div>
   );
 }

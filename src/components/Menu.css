@@ -18,10 +18,58 @@
 
 .link-menu {
   color: rgb(0, 0, 0);
-  font-size: 1rem;
+  font-size: rem;
+}
+.contenedor-links :hover{
+color:#D32F2F;
+  transition: 0.3s;
 }
 
 .boton-contacto, .boton-enviar {
   background-color: var(--rojo-filo) !important;
   color: white;
+}
+
+.nav_toggle {
+  display: none; /* Oculto en escritorio */
+  flex-direction: column;
+  cursor: pointer;
+}
+.nav_toggle span {
+  width: 30px;
+  height: 4px;
+  background: #333;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+@media (max-width: 768px) {
+  .nav_toggle {
+    display: flex; /* Se muestra en móviles */
+    z-index: 100;
+  } 
+  .contenedor-links {
+    position: absolute;
+    top: 70px;
+    left: -100%; /* Fuera de la pantalla al inicio */
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: left 0.4s ease;
+    z-index: 99;
+  }
+
+  /* Cuando el menú tiene la clase .open */
+  .contenedor-links.open {
+    left: 0;
+  }
+
+  .link-menu {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+  
 }

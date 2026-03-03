@@ -19,17 +19,10 @@ function Inicio() {
       distance: "50px",
       duration: 1000,
     });
-    sr.reveal(".razon-caja", {
-      // Corregido el nombre de la clase
+    sr.reveal(".contenedor-tipos", {
       interval: 200,
       origin: "bottom",
       distance: "50px",
-      duration: 1000,
-    });
-
-    sr.reveal(".cifra-item", {
-      interval: 200,
-      scale: 0.8,
       duration: 1000,
     });
   }, []);

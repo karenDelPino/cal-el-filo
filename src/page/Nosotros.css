@@ -4,7 +4,7 @@
   display: flex;
   gap: 50px;
   align-items: center;
-  min-height: 70vh;
+  
 }
 
 .texto-nosotros {
@@ -12,25 +12,24 @@
 }
 
 .texto-nosotros h2 {
-  color: #F39200; /* Naranja del logo */
+  
   font-size: 2.5rem;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .texto-nosotros p {
-  line-height: 1.8;
   font-size: 1.1rem;
   color: #444;
+  text-align: center;
 }
 
 .imagen-nosotros {
-  flex: 1; /* Ocupa la otra mitad */
+  
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
-
-.imagen-nosotros img {
-  box-shadow: 10px 10px 0px var(--rojo-filo);
-}
-
 /* Para que en el celular se vea una cosa debajo de la otra */
 @media (max-width: 768px) {
   .contenedor-nosotros {

@@ -1,16 +1,35 @@
-# React + Vite
+Hello world
+🏔️ Cal El Filo - Sitio Web Oficial
+Sitio web institucional para Cal El Filo, empresa líder en San Juan dedicada a la extracción y comercialización de cal de alta pureza. La aplicación es una Single Page Application (SPA) moderna, rápida y totalmente responsiva.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologías Utilizadas
+React.js: Biblioteca principal para la interfaz de usuario.
 
-Currently, two official plugins are available:
+Vite: Herramienta de construcción para un desarrollo ultra rápido.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+EmailJS: Integración para el envío de formularios de contacto sin backend propio.
 
-## React Compiler
+React Router Dom: Gestión de navegación entre páginas (Inicio, Productos, Nosotros, Contacto).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+React Vertical Timeline: Componente para la línea de tiempo histórica.
 
-## Expanding the ESLint configuration
+ScrollReveal: Animaciones de entrada al hacer scroll.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Instalación y Configuración
+Para ejecutar este proyecto localmente, seguí estos pasos:
+
+1-Clonar el repositorio:
+git clone https://github.com/tu-usuario/cal-el-filo.git
+2-Entrar a la carpeta del proyecto:
+cd cal-el-filo
+3-Instalar las dependencias:
+npm install
+
+Configurar EmailJS:
+Debes crear un archivo .env o reemplazar directamente tus credenciales en el archivo Contacto.jsx:
+
+servicioID: Tu ID de servicio (Gmail).
+
+plantillaID: Tu ID de plantilla configurada.
+
+llavePublica: Tu Public Key de la cuenta.
