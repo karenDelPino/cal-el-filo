@@ -1,5 +1,5 @@
 .hero {
-  background-image: linear-gradient(to right, rgba(82, 72, 64, 0.685), rgba(82, 72, 64, 0.747)), url('src/assets/image/fondoInicio2.jpg');
+  background-image: linear-gradient(to right, rgba(82, 72, 64, 0.685), rgba(82, 72, 64, 0.747)), url("../assets/image/fondoInicio2.jpg");
   background-size: cover;
   background-position: center;
   color: white;
