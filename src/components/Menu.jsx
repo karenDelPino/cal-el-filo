@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Menu.css"; // Importamos el CSS aquí
-import logoImg from "../assets/logo.png"; // Asegúrate de tener un logo en esta ruta
+//
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const closeMenu = () => setIsMenuOpen(false);

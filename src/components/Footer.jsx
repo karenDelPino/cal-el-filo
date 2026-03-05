@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoFooter from "../assets/logo.png";
 import "./Footer.css";
 
 function Footer() {
@@ -9,7 +8,11 @@ function Footer() {
       <div className="footer-contenido">
         {/* Columna 1: Logo y Resumen */}
         <div className="footer-col">
-          <img src={logoFooter} alt="Cal El Filo" className="logo-footer" />
+          <img
+            src="/cal-el-filo/logo.png"
+            alt="Cal El Filo"
+            className="logo-footer"
+          />
           <p>
             Líderes en extracción y procesamiento de cal de alta pureza en San
             Juan para todo el país.
