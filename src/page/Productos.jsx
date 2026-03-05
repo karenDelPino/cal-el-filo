@@ -1,42 +1,50 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import calAerea from "../assets/image/inicio/cal-aérea.jpg";
+import calVivaTriturada from "../assets/image/inicio/calviva.jpg";
+import calVivaMolida from "../assets/image/inicio/calviva2o.jpg";
+import carbonato from "../assets/image/inicio/carbonato.jpg";
+import construccion from "../assets/image/usos/icono-siderurgia-chico.png";
+import mineria from "../assets/image/usos/icono-mineria-chico.png";
+import cultivos from "../assets/image/usos/icono-agricultura-chico.png";
 import "./Productos.css";
+
 
 const productosData = [
   {
     titulo: "CAL AÉREA hidratada",
     desc: "Nuestros molinos, combinado con la alta calidad de nuestra cal, nos permiten producir un material de finura excepcionalmente alta.",
-    img: "src/assets/image/inicio/cal-aérea.jpg",
+    img: calAerea,
   },
   {
     titulo: "CAL VIVA TRITURADA",
     desc: "Ideal para estabilización de suelos y mezclas asfálticas de alta durabilidad.",
-    img: "src/assets/image/inicio/calviva.jpg",
+    img: calVivaTriturada,
   },
   {
     titulo: "CAL VIVA MOLIDA",
     desc: "Extra fina, ideal para revoques de alta calidad y terminaciones suaves.",
-    img: "src/assets/image/inicio/calviva2o.jpg",
+    img: calVivaMolida,
   },
   {
     titulo: "CAL VIVA TRITURADA",
     desc: "Especialmente formulada para la corrección de pH y tratamiento de efluentes.",
-    img: "src/assets/image/inicio/carbonato.jpg",
+    img: carbonato,
   },
 ];
 
 const presentacionData = [
   {
     nombre: "construcción",
-    img: "src/assets/image/usos/icono-siderurgia-chico.png",
+    img: construccion,
   },
   {
     nombre: "minería",
-    img: "src/assets/image/usos/icono-mineria-chico.png",
+    img: mineria,
   },
   {
     nombre: "cultivos",
-    img: "src/assets/image/usos/icono-agricultura-chico.png",
+    img: cultivos,
   },
 ];
 

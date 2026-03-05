@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/image/logo.png";
 import "./Footer.css";
 
 function Footer() {
@@ -9,7 +10,7 @@ function Footer() {
         {/* Columna 1: Logo y Resumen */}
         <div className="footer-col">
           <img
-            src="/cal-el-filo/logo.png"
+            src={logo}
             alt="Cal El Filo"
             className="logo-footer"
           />

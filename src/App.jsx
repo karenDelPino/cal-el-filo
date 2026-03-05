@@ -10,12 +10,12 @@ import Menu from "./components/Menu";
 import Footer from "./components/Footer";
 
 function App() {
-  const nombreRepo = "/cal-el-filo";
   return (
     <Navegador>
       {/* El Menú se queda fijo arriba en todas las páginas */}
       <Menu />
-      <Routes basename={nombreRepo}>
+      <Routes >
+        <Route index element={<Inicio />} />
         <Route path="/" element={<Inicio />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/productos" element={<Productos />} />

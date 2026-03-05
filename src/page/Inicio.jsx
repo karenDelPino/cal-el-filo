@@ -1,26 +1,46 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
 import "./Inicio.css";
+// Productos
+import tiposCal from "../assets/image/inicio/tiposCal.png";
+import calAerea from "../assets/image/inicio/cal-aérea.jpg";
+import calVivaTriturada from "../assets/image/inicio/calviva.jpg";
+import calVivaMolida from "../assets/image/inicio/calviva2o.jpg";
+import carbonato from "../assets/image/inicio/carbonato.jpg";
+
+// Secciones e Iconos
+import manosCaliza from "../assets/image/manos-caliza.png";
+import iconPure from "../assets/image/iconPure.png";
+import iconTime from "../assets/image/iconTime.png";
+import iconManos from "../assets/image/iconManos.png";
+import operario from "../assets/operario.png";
+
+// Logos de Empresas (Carrusel)
+import logoArquitectos from "../assets/image/logoArquitectos.png";
+import logoAusarcos from "../assets/image/logoAusarcos.png";
+import logoConstructores from "../assets/image/logoConstructores.png";
+import logoGeotecnia from "../assets/image/logoGeotecnia.png";
+import logoLosAndes from "../assets/image/logoLosAndes.png";
+import logoMaterialesHoy from "../assets/image/logoMaterialesHoy.png";
+import logoSanJuanConstruye from "../assets/image/logoSanJuanConstruye.png";
 
 function Inicio() {
   useEffect(() => {
     const sr = ScrollReveal();
     sr.reveal(".contenido-hero", {
-      // Corregido el nombre de la clase
       interval: 200,
       origin: "bottom",
       distance: "50px",
       duration: 1000,
     });
     sr.reveal(".hero-container", {
-      // Corregido el nombre de la clase
       interval: 200,
       origin: "bottom",
       distance: "50px",
       duration: 1000,
     });
     sr.reveal(".elegirnos", {
-      // Corregido el nombre de la clase
+      
       interval: 200,
       origin: "bottom",
       distance: "50px",
@@ -56,7 +76,7 @@ function Inicio() {
         <div>
           <div className="contenedor-tipos">
             <img
-              src="src/assets/image/inicio/tiposCal.png"
+              src={tiposCal}
               alt="Pureza de Origen"
               className="icon-tipos"
             />
@@ -65,7 +85,7 @@ function Inicio() {
             <div className="tipos-caja">
               <a href="/Productos">
                 <img
-                  src="src/assets/image/inicio/cal-aérea.jpg"
+                  src={calAerea}
                   alt="Pureza de Origen"
                   className="icon-tipos-cal"
                 />
@@ -76,7 +96,7 @@ function Inicio() {
             <div className="tipos-caja">
               <a href="/Productos">
                 <img
-                  src="src/assets/image/inicio/calviva.jpg"
+                  src={calVivaTriturada}    
                   alt="Entrega Inmediata"
                   className="icon-tipos-cal"
                 />
@@ -87,7 +107,7 @@ function Inicio() {
             <div className="tipos-caja">
               <a href="/Productos">
                 <img
-                  src="src/assets/image/inicio/calviva2o.jpg"
+                  src={calVivaMolida}
                   alt="Atención Directa"
                   className="icon-tipos-cal"
                 />
@@ -97,7 +117,7 @@ function Inicio() {
             <div className="tipos-caja">
               <a href="/Productos">
                 <img
-                  src="src/assets/image/inicio/carbonato.jpg"
+                  src={carbonato}
                   alt="Atención Directa"
                   className="icon-tipos-cal"
                 />
@@ -139,7 +159,7 @@ function Inicio() {
           <div class="hero-image">
             <div class="card-large">
               <img
-                src="src/assets/image/manos-caliza.png"
+                src={manosCaliza}
                 alt="mina de cal"
                 class="hero-img-fluid"
               />
@@ -153,7 +173,7 @@ function Inicio() {
         <div className="contenedor-razones">
           <div className="razon-caja">
             <img
-              src="src/assets/image/iconPure.png"
+              src={iconPure}
               alt="Pureza de Origen"
               className="icon"
             />
@@ -168,7 +188,7 @@ function Inicio() {
 
           <div className="razon-caja">
             <img
-              src="src/assets/image/iconTime.png"
+              src={iconTime}
               alt="Entrega Inmediata"
               className="icon"
             />
@@ -181,7 +201,7 @@ function Inicio() {
 
           <div className="razon-caja">
             <img
-              src="src/assets/image/iconManos.png"
+              src={iconManos}
               alt="Atención Directa"
               className="icon"
             />
@@ -206,21 +226,21 @@ function Inicio() {
           EMPRESAS QUE CONFÍAN EN NOSOTROS
         </h3>
         <div className="carrusel-track">
-          <img src="src/assets/image/logoArquitectos.png" alt="Empresaa 1" />
-          <img src="src/assets/image/logoAusarcos.png" alt="Empresa 2" />
-          <img src="src/assets/image/logoConstructores.png" alt="Empresa 3" />
-          <img src="src/assets/image/logoGeotecnia.png" alt="Empresa 4" />
-          <img src="src/assets/image/logoLosAndes.png" alt="Empresa 5" />
-          <img src="src/assets/image/logoMaterialesHoy.png" alt="Empresa 6" />
+          <img src={logoArquitectos} alt="Empresaa 1" />
+          <img src={logoAusarcos} alt="Empresa 2" />
+          <img src={logoConstructores} alt="Empresa 3" />
+          <img src={logoGeotecnia} alt="Empresa 4" />
+          <img src={logoLosAndes} alt="Empresa 5" />
+          <img src={logoMaterialesHoy} alt="Empresa 6" />
           <img
-            src="src/assets/image/logoSanJuanConstruye.png"
+            src={logoSanJuanConstruye}
             alt="Empresa 7"
           />
-          <img src="src/assets/image/logoArquitectos.png" alt="Empresaa 1" />
-          <img src="src/assets/image/logoAusarcos.png" alt="Empresa 2" />
-          <img src="src/assets/image/logoConstructores.png" alt="Empresa 3" />
-          <img src="src/assets/image/logoGeotecnia.png" alt="Empresa 4" />
-          <img src="src/assets/image/logoLosAndes.png" alt="Empresa 5" />
+          <img src={logoArquitectos} alt="Empresaa 1" />
+          <img src={logoAusarcos} alt="Empresa 2" />
+          <img src={logoConstructores} alt="Empresa 3" />
+          <img src={logoGeotecnia} alt="Empresa 4" />
+          <img src={logoLosAndes} alt="Empresa 5" />
         </div>
       </section>
       <section class="hero-alt">
@@ -247,7 +267,7 @@ function Inicio() {
           <div class="hero-image">
             <div class="card-large-2">
               <img
-                src="src/assets/operario.png"
+                src={operario}
                 alt="mina de cal"
                 class="hero-img-fluid"
               />

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logoImg from "../assets/image/logo.png";
 import "./Menu.css"; // Importamos el CSS aquí
 //
 function Menu() {
@@ -13,13 +14,9 @@ function Menu() {
         </span>
       </div>
       <div className="container-logo">
-        <a href="/">
-          <img
-            src="/cal-el-filo/logo.png"
-            alt="Cal El Filo"
-            style={{ height: "70px" }}
-          />
-        </a>
+        <Link to="/">
+          <img src={logoImg} alt="Logo" style={{ height: "70px" }} />
+        </Link>
       </div>
       <div
         className={`nav_toggle ${isMenuOpen && "open"}`}
