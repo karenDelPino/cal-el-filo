@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Navegador, Routes, Route } from "react-router-dom";
+// Cambiamos BrowserRouter por HashRouter
+import { HashRouter as Navegador, Routes, Route } from "react-router-dom";
 
-// Importamos las piezas de la web
 import Inicio from "./page/Inicio";
 import Nosotros from "./page/Nosotros";
 import Productos from "./page/Productos";
@@ -11,15 +11,16 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
+    // Con HashRouter NO necesitas el basename, funciona solo
     <Navegador>
-      {/* El Menú se queda fijo arriba en todas las páginas */}
       <Menu />
-      <Routes >
+      <Routes>
         <Route index element={<Inicio />} />
         <Route path="/" element={<Inicio />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/productos" element={<Productos />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="*" element={<Inicio />} />
       </Routes>
       <Footer />
     </Navegador>
