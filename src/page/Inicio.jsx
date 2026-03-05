@@ -19,6 +19,13 @@ function Inicio() {
       distance: "50px",
       duration: 1000,
     });
+    sr.reveal(".elegirnos", {
+      // Corregido el nombre de la clase
+      interval: 200,
+      origin: "bottom",
+      distance: "50px",
+      duration: 1000,
+    });
     sr.reveal(".contenedor-tipos", {
       interval: 200,
       origin: "bottom",

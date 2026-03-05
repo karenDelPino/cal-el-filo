@@ -26,8 +26,6 @@ function Contacto() {
   const miFormulario = useRef();
   const enviarEmail = (evento) => {
     evento.preventDefault();
-
-    // Estos datos los sacas de tu panel de EmailJS
     const servicioID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
     const plantillaID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
     const llavePublica = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
