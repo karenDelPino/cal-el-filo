@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    // Con HashRouter NO necesitas el basename, funciona solo
     <Navegador>
       <Menu />
       <Routes>
