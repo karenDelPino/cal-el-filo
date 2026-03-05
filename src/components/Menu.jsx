@@ -14,7 +14,11 @@ function Menu() {
       </div>
       <div className="container-logo">
         <a href="/">
-          <img src={logoImg} alt="Cal El Filo" style={{ height: "70px" }} />
+          <img
+            src="/cal-el-filo/logo.png"
+            alt="Cal El Filo"
+            style={{ height: "70px" }}
+          />
         </a>
       </div>
       <div
