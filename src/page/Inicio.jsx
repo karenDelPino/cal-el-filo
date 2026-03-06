@@ -78,52 +78,52 @@ function Inicio() {
           </div>
           <div className="contenedor-tipos">
             <div className="tipos-caja">
-              <a href="/Productos">
+              <Link to="/productos">
                 <img
                   src={calAerea}
                   alt="Pureza de Origen"
                   className="icon-tipos-cal"
                 />
-              </a>
+              </Link>
               <h4>CAL AÉREA HIDRATADA</h4>
             </div>
 
             <div className="tipos-caja">
-              <a href="/Productos">
+              <Link to="/productos">
                 <img
                   src={calVivaTriturada}
                   alt="Entrega Inmediata"
                   className="icon-tipos-cal"
                 />
-              </a>
+              </Link>
               <h4>CAL VIVA TRITURADA</h4>
             </div>
 
             <div className="tipos-caja">
-              <a href="/Productos">
+              <Link to="/productos">
                 <img
                   src={calVivaMolida}
                   alt="Atención Directa"
                   className="icon-tipos-cal"
                 />
-              </a>
+              </Link>
               <h4>CAL VIVA MOLIDA</h4>
             </div>
             <div className="tipos-caja">
-              <a href="/Productos">
+              <Link to="/productos">
                 <img
                   src={carbonato}
                   alt="Atención Directa"
                   className="icon-tipos-cal"
                 />
-              </a>
+              </Link>
               <h4>CAL VIVA TRITURADA</h4>
             </div>
           </div>
           <div className="hero-buttons">
-            <a href="/Productos" className="btn btn-primary">
+            <Link to="/productos" className="btn btn-primary">
               Ver productos
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -141,13 +141,10 @@ function Inicio() {
               <p>Producción Industrial</p>
               <p>Calidad Certificada</p>
             </div>
-            <div class="btn-group">
-              <button
-                class="btn btn-primary"
-                onClick={() => (window.location.href = "/contacto")}
-              >
+            <div>
+              <Link to="/contacto" className="btn btn-primary">
                 Consultar Alcance de Entrega
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -231,12 +228,9 @@ function Inicio() {
             </p>
 
             <div class="btn-group">
-              <button
-                class="btn btn-primary"
-                onClick={() => (window.location.href = "/contacto")}
-              >
+              <Link to="/contacto" className="btn btn-primary">
                 Solicitar Asesoramiento
-              </button>
+              </Link>
             </div>
           </div>
 
