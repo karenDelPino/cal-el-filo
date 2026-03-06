@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import { Link } from "react-router-dom";
 import "./Inicio.css";
 // Productos
 import tiposCal from "../assets/image/inicio/tiposCal.png";
@@ -39,7 +40,6 @@ function Inicio() {
       duration: 1000,
     });
     sr.reveal(".elegirnos", {
-      
       interval: 200,
       origin: "bottom",
       distance: "50px",
@@ -61,12 +61,12 @@ function Inicio() {
           <h1>CALIDAD CERTIFICADA DESDE SAN JUAN</h1>
           <p>Cal de Alta Pureza para Obras Exigentes</p>
           <div className="hero-buttons">
-            <a href="/Productos" className="btn btn-primary">
+            <Link to="/productos" className="btn btn-primary">
               Ver productos
-            </a>
-            <a href="/contacto" className="btn btn-secondary">
+            </Link>
+            <Link to="/contacto" className="btn btn-secondary">
               Contactanos
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -74,11 +74,7 @@ function Inicio() {
         <h1 className="title">Nuestros Productos</h1>
         <div>
           <div className="contenedor-tipos">
-            <img
-              src={tiposCal}
-              alt="Pureza de Origen"
-              className="icon-tipos"
-            />
+            <img src={tiposCal} alt="Pureza de Origen" className="icon-tipos" />
           </div>
           <div className="contenedor-tipos">
             <div className="tipos-caja">
@@ -95,7 +91,7 @@ function Inicio() {
             <div className="tipos-caja">
               <a href="/Productos">
                 <img
-                  src={calVivaTriturada}    
+                  src={calVivaTriturada}
                   alt="Entrega Inmediata"
                   className="icon-tipos-cal"
                 />
@@ -157,11 +153,7 @@ function Inicio() {
 
           <div class="hero-image">
             <div class="card-large">
-              <img
-                src={manosCaliza}
-                alt="mina de cal"
-                class="hero-img-fluid"
-              />
+              <img src={manosCaliza} alt="mina de cal" class="hero-img-fluid" />
             </div>
           </div>
         </div>
@@ -171,11 +163,7 @@ function Inicio() {
 
         <div className="contenedor-razones">
           <div className="razon-caja">
-            <img
-              src={iconPure}
-              alt="Pureza de Origen"
-              className="icon"
-            />
+            <img src={iconPure} alt="Pureza de Origen" className="icon" />
 
             <h4>Pureza de Origen</h4>
 
@@ -186,11 +174,7 @@ function Inicio() {
           </div>
 
           <div className="razon-caja">
-            <img
-              src={iconTime}
-              alt="Entrega Inmediata"
-              className="icon"
-            />
+            <img src={iconTime} alt="Entrega Inmediata" className="icon" />
             <h4>Entrega Inmediata</h4>
             <p>
               Sabemos que tu obra no puede parar. Contamos con stock permanente
@@ -199,11 +183,7 @@ function Inicio() {
           </div>
 
           <div className="razon-caja">
-            <img
-              src={iconManos}
-              alt="Atención Directa"
-              className="icon"
-            />
+            <img src={iconManos} alt="Atención Directa" className="icon" />
             <h4>Atención Directa</h4>
             <p>
               Sin intermediarios. Trato directo con los dueños para asegurar el
@@ -231,10 +211,7 @@ function Inicio() {
           <img src={logoGeotecnia} alt="Empresa 4" />
           <img src={logoLosAndes} alt="Empresa 5" />
           <img src={logoMaterialesHoy} alt="Empresa 6" />
-          <img
-            src={logoSanJuanConstruye}
-            alt="Empresa 7"
-          />
+          <img src={logoSanJuanConstruye} alt="Empresa 7" />
           <img src={logoArquitectos} alt="Empresaa 1" />
           <img src={logoAusarcos} alt="Empresa 2" />
           <img src={logoConstructores} alt="Empresa 3" />
@@ -265,11 +242,7 @@ function Inicio() {
 
           <div class="hero-image">
             <div class="card-large-2">
-              <img
-                src={operario}
-                alt="mina de cal"
-                class="hero-img-fluid"
-              />
+              <img src={operario} alt="mina de cal" class="hero-img-fluid" />
             </div>
           </div>
         </div>
