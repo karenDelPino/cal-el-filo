@@ -14,7 +14,6 @@ import iconPure from "../assets/image/iconPure.png";
 import iconTime from "../assets/image/iconTime.png";
 import iconManos from "../assets/image/iconManos.png";
 import operario from "../assets/operario.png";
-
 // Logos de Empresas (Carrusel)
 import logoArquitectos from "../assets/image/logoArquitectos.png";
 import logoAusarcos from "../assets/image/logoAusarcos.png";
