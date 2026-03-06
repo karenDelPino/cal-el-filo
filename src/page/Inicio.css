@@ -1,0 +1,235 @@
+.hero {
+  background-image: linear-gradient(to right, rgba(82, 72, 64, 0.685), rgba(82, 72, 64, 0.747)), url("../assets/image/fondoInicio2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  
+}
+
+.hero p {
+  font-size: 2.3rem;
+  color: #ffffff;
+  text-align: center;
+}
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.title{
+  text-align: center;
+  margin: 60px 0 40px;
+  font-size: 2.5rem;
+  color: #1A1A1B;
+  text-transform: uppercase;
+
+}
+/* Sección Por Qué Elegirnos */
+.elegirnos {
+  padding: 80px 10%;
+   /* Un gris sutil para separar secciones */
+  text-align: center;
+}
+
+.elegirnos h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #1A1A1A;
+}
+
+.contenedor-razones {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  
+}
+.contenedor-tipos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+ 
+}
+
+.tipos-caja{
+   flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  color: #D32F2F; /* Naranja de tu marca */
+  font-size: 1.3rem;
+  margin: 80px 0;
+}
+
+.razon-caja {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  
+}
+
+.razon-caja h4 {
+  color: #D32F2F; /* Naranja de tu marca */
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+.razon-caja p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+  
+}
+.icon{
+  width: 100px; 
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(214, 24, 3, 0);
+  
+}
+.icon-tipos{
+  width: 550px; 
+  height: 150px;
+  display: flex;
+}
+.icon-tipos-cal{
+  width: 150px; 
+  height: 150px;
+  ;
+  
+  
+  
+}
+/* Un detalle para los números o íconos */
+.numero {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(241, 44, 22, 0.286); /* Naranja transparente */
+  margin-bottom: -20px;
+}
+
+/* Estilos del Carrusel */
+.seccion-clientes {
+  padding: 40px 0;
+  background-color: white;
+  overflow: hidden; /* Esconde lo que sobra del carrusel */
+}
+
+.carrusel-track {
+  display: flex;
+  width: 900px; 
+  animation: scroll 30s linear infinite;
+  margin-bottom: 60px;
+}
+
+.carrusel-track img {
+  height: 200px;
+  margin: 0 80px;
+  filter: grayscale(100%); /* Logos en gris */
+  opacity: 0.6;
+  
+}
+
+.carrusel-track img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* animación */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-250px * 3)); }
+}
+
+.hero-alt {
+  background: linear-gradient(to right, #aa2413 40%, #ffffff86 40%);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row-reverse; /* Imagen izquierda, texto derecha */
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 80px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.card-large {
+  width: 426px;
+  height: 607px;
+  background-color: #434f65;
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+ 
+}
+.hero-img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Esto hace que la imagen llene el espacio sin estirarse */
+  object-position: center; /* Centra la parte visible de la foto */
+  transition: transform 0.5s ease; /* Efecto suave opcional */
+}
+
+/* Efecto visual: la imagen se agranda un poco al pasar el mouse */
+.card-large:hover .hero-img-fluid {
+  transform: scale(1.05);
+}
+.card-large-2 {
+  width: 426px;
+  height: 607px;
+  background-color: #434f65;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  overflow: hidden;
+ 
+}
+
+/* Ajuste para celulares */
+@media (max-width: 768px) {
+  .icon-tipos{width: 100%;height: 100%;}
+  .proceso-contenedor { flex-direction: column; gap: 0px; }
+  .proceso-contenedor::before { display: none; }
+  .hero-alt {
+    background: #f4f6f9;
+  }
+  .hero-container {
+    flex-direction: column; /* Se apila normal en móvil */
+    text-align: center;
+    gap: 40px;
+  }
+  .card-large {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+  }
+}
