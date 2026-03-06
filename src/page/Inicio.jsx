@@ -130,7 +130,7 @@ function Inicio() {
       <section className="hero-alt">
         <div className="hero-container">
           <div className="hero-text">
-            <span>Del Corazón de San Juan a su Obra</span>
+            <span>PRODUCCIÓN INDUSTRIAL</span>
             <h1>Líderes en producción de cal</h1>
             <p>
               Desde San Juan para el mundo. Transformamos recursos naturales con
@@ -138,7 +138,6 @@ function Inicio() {
               calidad.
             </p>
             <div>
-              <p>Producción Industrial</p>
               <p>Calidad Certificada</p>
             </div>
             <div>
