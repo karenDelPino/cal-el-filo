@@ -1,13 +1,15 @@
 .hero {
-  background-image: linear-gradient(to right, rgba(82, 72, 64, 0.685), rgba(82, 72, 64, 0.747)), url("../assets/image/fondoInicio2.jpg");
+  background-image:  url("../assets/image/Fondo1.png");
   background-size: cover;
   background-position: center;
   color: white;
+  width: 100%;
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: end;
+  /*border-bottom: 5px solid #D32F2F;*/
   
   
 }
@@ -15,7 +17,6 @@
 .hero h1 {
   font-size: 3rem;
   color: #ffffff;
-  margin-bottom: 20px;
   
 }
 
@@ -29,20 +30,26 @@
   gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 20px;
+  
 }
 .title{
   text-align: center;
   margin: 60px 0 40px;
   font-size: 2.5rem;
   color: #1A1A1B;
-  text-transform: uppercase;
 
+}
+.seccion-productos{
+  background-image:  url("../assets/image/fondoFlechas2.png");
+  width: 100%;
 }
 /* Sección Por Qué Elegirnos */
 .elegirnos {
-  padding: 80px 10%;
-   /* Un gris sutil para separar secciones */
+  margin-top: 100px;
   text-align: center;
+   background-image:  url("../assets/image/fondoFlechas2.png");
+    width: 100%;
 }
 
 .elegirnos h2 {
@@ -161,7 +168,8 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  margin-top: 50px;
+  
+  
 }
 
 .hero-container {
@@ -201,21 +209,36 @@
 }
 
 /* Efecto visual: la imagen se agranda un poco al pasar el mouse */
-.card-large:hover .hero-img-fluid {
+.card-large-2:hover .hero-img-fluid {
   transform: scale(1.05);
 }
 .card-large-2 {
   width: 426px;
   height: 607px;
   background-color: #434f65;
-  border-bottom-left-radius: 100px;
+  border-radius: 20px;
   display: flex;
   overflow: hidden;
+
  
 }
 
 /* Ajuste para celulares */
 @media (max-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(82, 72, 64, 0.685), rgba(82, 72, 64, 0.747)), url("../assets/image/fondoCelulares.jpg");
+   
+    text-align: center;
+  }
+  .hero h1 {
+    
+    text-align: center; 
+  }
+  .seccion-productos{
+  background-image:  url("../assets/image/fondo");
+  width: 100%;
+}
+  
   .icon-tipos{width: 100%;height: 100%;}
   .proceso-contenedor { flex-direction: column; gap: 0px; }
   .proceso-contenedor::before { display: none; }

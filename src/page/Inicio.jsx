@@ -58,8 +58,8 @@ function Inicio() {
       {/* Portada Principal */}
       <section className="hero">
         <div className="contenido-hero">
-          <h1>CALIDAD CERTIFICADA DESDE SAN JUAN</h1>
-          <p>Cal de Alta Pureza para Obras Exigentes</p>
+          <h1>Soluciones Industriales</h1>
+          <p>La Calidad Hace la Continuidad</p>
           <div className="hero-buttons">
             <Link to="/productos" className="btn btn-primary">
               Ver productos
@@ -70,7 +70,7 @@ function Inicio() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="seccion-productos">
         <h1 className="title">Nuestros Productos</h1>
         <div>
           <div className="contenedor-tipos">
@@ -85,7 +85,7 @@ function Inicio() {
                   className="icon-tipos-cal"
                 />
               </Link>
-              <h4>CAL AÉREA HIDRATADA</h4>
+              <h4>CAL HIDRATADA</h4>
             </div>
 
             <div className="tipos-caja">
@@ -155,7 +155,7 @@ function Inicio() {
         </div>
       </section>
       <section className="elegirnos">
-        <h2>¿Por qué elegirnos?</h2>
+        <h1>¿Por qué elegirnos?</h1>
 
         <div className="contenedor-razones">
           <div className="razon-caja">
@@ -235,7 +235,7 @@ function Inicio() {
 
           <div class="hero-image">
             <div class="card-large-2">
-              <img src={operario} alt="mina de cal" class="hero-img-fluid" />
+              <img src={operario} alt="operario" class="hero-img-fluid" />
             </div>
           </div>
         </div>

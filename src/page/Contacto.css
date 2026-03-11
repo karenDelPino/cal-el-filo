@@ -1,10 +1,12 @@
 /* src/paginas/Contacto.css */
 .seccion-contacto {
- padding: 80px 10% 40px 10%;
+ padding: 0px 10% 40px 10%;
   gap: 50px;
   align-items: center;
 }
 .titulo p{
+  font-size: 1.1rem;
+  color: #444;
   text-align: center;
 }
 .titulo h2{

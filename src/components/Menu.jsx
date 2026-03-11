@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logoImg from "../assets/image/logo.png";
-import "./Menu.css"; // Importamos el CSS aquí
+import "./Menu.css"; 
 //
 function Menu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,7 +15,7 @@ function Menu() {
       </div>
       <div className="container-logo">
         <Link to="/">
-          <img src={logoImg} alt="Logo" style={{ height: "70px" }} />
+          <img src={logoImg} alt="Logo" style={{ height: "80px" }} />
         </Link>
       </div>
       <div

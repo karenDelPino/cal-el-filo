@@ -1,9 +1,9 @@
 /* --- Contenedor Principal --- */
 .pagina-productos {
-  padding: 80px 5%;
+ padding: 0px 10% 40px 10%;
   background-color: #fcfcfc; /* Un blanco muy levemente gris para contraste */
   text-align: center;
-  font-family: Arial, sans-serif; /* Ajustar a la fuente de tu marca */
+  
 }
 
 .pagina-productos h2 {
@@ -12,7 +12,9 @@
   margin-bottom: 40px;
 }
 .pagina-productos p {
-  margin-bottom: 40px;
+ font-size: 1.1rem;
+  color: #444;
+  text-align: center;
 }
 
 /* --- La Grilla Responsiva --- */

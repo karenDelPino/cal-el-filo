@@ -9,7 +9,10 @@
   top: 0;
   z-index: 100;
 }
-
+.container-logo{
+ 
+  align-items: center;
+}
 .contenedor-links {
   display: flex;
   gap: 20px;
@@ -23,11 +26,6 @@
 .contenedor-links :hover{
 color:#D32F2F;
   transition: 0.3s;
-}
-
-.boton-contacto, .boton-enviar {
-  background-color: var(--rojo-filo) !important;
-  color: white;
 }
 
 .nav_toggle {
