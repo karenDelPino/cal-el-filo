@@ -55,7 +55,8 @@ function Inicio() {
 
   return (
     <div>
-      {/* Portada Principal */}
+     
+    
       <section className="hero">
         <div className="contenido-hero">
           <h1>Soluciones Industriales</h1>
@@ -70,6 +71,7 @@ function Inicio() {
           </div>
         </div>
       </section>
+      
       <section className="seccion-productos">
         <h1 className="title">Nuestros Productos</h1>
         <div>

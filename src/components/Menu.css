@@ -2,15 +2,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 5%;
+  padding: 30px 5%;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   position: sticky;
   top: 0;
   z-index: 100;
 }
-.container-logo{
- 
+.container-logo {
+  position: absolute; /* Sacamos el logo del flujo normal */
+  left: 50%;         /* Lo movemos al 50% de la pantalla */
+  transform: translateX(-50%); /* Lo centramos respecto a su propio eje */
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 .contenedor-links {

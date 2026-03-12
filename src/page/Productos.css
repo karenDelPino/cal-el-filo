@@ -40,7 +40,7 @@
 }
 
 .producto-card:hover {
-  transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+  border: 2px solid #D32F2F; /* Efecto sutil al pasar el mouse */
 }
 
 /* --- Sección Superior (Imagen y Título) --- */
@@ -56,7 +56,7 @@
   width: 120px; /* Ajustar tamaño según necesidad */
   height: 120px;
   border-radius: 50%;
-  border: 1px solid #ccc; /* Borde fino gris como en la imagen */
+  border: 1px solid #ccc; /* Borde fino gris*/
   overflow: hidden; /* Corta la imagen en forma de círculo */
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@
   line-height: 1.2;
 }
 
-/* Línea verde decorativa */
+/* Línea decorativa */
 .linea-decorativa-roja {
   width: 100%;
   height: 3px;
@@ -103,7 +103,7 @@
   font-size: 0.95rem;
   color: #555;
   line-height: 1.6;
-  margin-bottom: 40px; /* Espacio antes de la sección de presentación */
+  margin-bottom: 10px; /* Espacio antes de la sección de presentación */
   flex-grow: 1; /* Empuja la sección de presentación hacia abajo si hay poco texto */
 }
 

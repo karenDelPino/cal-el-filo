@@ -44,7 +44,7 @@ function Contacto() {
   return (
     <div className="seccion-contacto">
       <div className="titulo">
-        <h2>Contacto</h2>
+        <h2>Impulse su Obra con Nosotros</h2>
         <p>Estamos para asesorarlo en su próximo proyecto.</p>
       </div>
 
@@ -73,10 +73,12 @@ function Contacto() {
                 required
               />
             </div>
-
-            <button type="submit" className="btn btn-primary btn-enviar">
+            <div className="btn-enviar">
+              <button type="submit" className="btn btn-primary">
               Enviar Mensaje
             </button>
+            </div>
+            
           </form>
         </div>
         <div className="columna-info">

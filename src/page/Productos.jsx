@@ -9,10 +9,10 @@ import mineria from "../assets/image/usos/icono-mineria-chico.png";
 import cultivos from "../assets/image/usos/icono-agricultura-chico.png";
 import "./Productos.css";
 
-
+/* array de objetos */
 const productosData = [
   {
-    titulo: "CAL AÉREA hidratada",
+    titulo: "CAL HIDRATADA",
     desc: "Nuestros molinos, combinado con la alta calidad de nuestra cal, nos permiten producir un material de finura excepcionalmente alta.",
     img: calAerea,
   },
@@ -51,7 +51,7 @@ const presentacionData = [
 function Productos() {
   useEffect(() => {
     ScrollReveal().reveal(".producto-card", {
-      interval: 150,
+      interval: 150,  //Esto hace que las tarjetas no aparezcan todas juntas, sino en "cascada"
       origin: "bottom",
       distance: "30px",
       duration: 800,
@@ -70,9 +70,9 @@ function Productos() {
         Descubre nuestra amplia gama de productos de calidad para diversas
         aplicaciones.
       </p>
-      <div className="contenedor-tarjetas">
-        {productosData.map((prod, index) => (
-          <div className="producto-card" key={index}>
+      <div className="contenedor-tarjetas"> {/*El método .map() recorre el array productosData uno por uno. */}
+        {productosData.map((prod, index) => (  
+          <div className="producto-card" key={index}> {/*React necesita un identificador único para cada elemento de la lista  Al usar el index (la posición del elemento), le das a React una forma de rastrearlos eficientemente.*/}
             {/* Sección Superior: Imagen circular y Texto */}
             <div className="producto-encabezado">
               <div className="producto-img-circular-container">

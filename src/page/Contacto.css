@@ -68,14 +68,19 @@
   height: 250px;
   resize: none;
 }
-.btn-enviar{
-  justify-content: center;
-  display: flex;
+.btn-enviar {
+  display: flex;       /* Activamos el modelo de caja flexible */
+  justify-content: center; /* Centramos el contenido horizontalmente */
+  width: 100%;         /* Aseguramos que el contenedor ocupe todo el ancho del formulario */
+  margin-top: 20px;    /* Espaciado opcional respecto al campo anterior */
 }
 
 @media (max-width: 768px) {
   .contacto-contenedor {
     flex-direction: column;
      
+  }
+  .columna-formulario{
+    width: 100%;
   }
 }

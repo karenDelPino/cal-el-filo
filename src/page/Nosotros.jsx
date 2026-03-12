@@ -57,7 +57,7 @@ function Nosotros() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2010"
-          iconStyle={{ background: "#1A1A1A", color: "#fff" }} // Icono Negro para variar
+          iconStyle={{ background: "#1A1A1A", color: "#fff" }} 
         >
           <img
             src={historiaImg}
@@ -73,7 +73,7 @@ function Nosotros() {
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           date="2022"
-          iconStyle={{ background: "#D32F2F", color: "#fff" }} // Icono Negro para variar
+          iconStyle={{ background: "#D32F2F", color: "#fff" }} 
         >
           <img
             src={historiaIso}
